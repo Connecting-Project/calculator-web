@@ -1,0 +1,61 @@
+.pyeongContainer{
+    margin: 20px auto;
+    width: 570px;
+  
+    // @media(max-width: 480px){
+    //   width: 360px;
+    // }
+  
+    // @media(max-width: 400px){
+    //   width: 252px;
+    // }
+  }
+
+  .title {
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ce2e2e;
+  }
+
+  .calculator {
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+  }
+
+  .cross{
+        position: relative;
+        height: 20px;
+        display: table-cell;
+        vertical-align: middle;
+  }
+
+  .inputNumber{
+    position: relative;
+    display: table-cell;
+  }
+
+  .result{
+      float: right;
+
+  }
+
+  .resultbox{
+    position: relative;
+    display: table-cell;
+  }
+
+  .suffix{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+    color: gray;
+  }
+
+  .resulttext{
+    font-size: 23px;
+    font-weight: bold;
+    color: #dc4848;
+  }

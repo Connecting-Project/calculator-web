@@ -1,0 +1,71 @@
+.cp_container{
+    
+    letter-spacing: 0px;
+}
+
+.cp_paper{
+    width: 500px;
+    margin : 30px auto;
+    padding: 2px 16px 20px;
+}
+
+.cp_title{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.cp_subtitle{
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
+.cp_button{
+
+        display: inline-block;
+        zoom: 1;
+        width: 100px;
+        border: 1px solid #b3b3b3;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+        border-radius: 3px;
+        margin-left: 0;
+        background-color: #19416e;
+        border-color: #0c2847;
+        color: #fff;
+        vertical-align: top;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 0px 10px;
+}
+
+.cp_result{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.cp_total{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cp_total_num{
+    color: rgb(200,50,50);
+}
+
+.cp_date{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cp_date_num{
+    color: rgb(200,50,50);
+}
+
+.slider_box{
+    width: 80%;
+    margin: 10px auto;
+}
