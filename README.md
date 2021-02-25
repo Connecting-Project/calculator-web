@@ -34,7 +34,7 @@ $ npm start
 ### Docker 
 
 ```bash
-$ docker run -p 8080:8080 -d jusk2/hawaiian-password-web
+$ docker run -p 5000:5000 -d jusk2/hawaiian-password-web
 ```
 
 
