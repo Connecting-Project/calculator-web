@@ -122,7 +122,7 @@ function Career() {
             return;
         }
 
-        axios.post("https://calculator.hawaiian-pizza.gq/cal/career", dates)
+        axios.post("https://calculator.hawaiian-pizza.pw/cal/career", dates)
         .then(function (response) {
             setResult(response.data);
              // response  

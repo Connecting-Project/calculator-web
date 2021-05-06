@@ -63,7 +63,7 @@ function Campaign() {
         }else{
             axios({
                 method: 'POST',
-                url: `https://calculator.hawaiian-pizza.gq/cal/campaign?start=`+datevalue+`&type=`+codenumber
+                url: `https://calculator.hawaiian-pizza.pw/cal/campaign?start=`+datevalue+`&type=`+codenumber
             }).then((response) => {
                 setRemain(response.data.day);
                 setDischange(response.data.campaign);
