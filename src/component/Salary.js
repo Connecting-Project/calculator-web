@@ -84,7 +84,7 @@ function Salary () {
         }else{
             axios({
                 method:'POST',
-                url: `https://calculator.hawaiian-pizza.pw/cal/salary`,
+                url: `https://calculator.hawaiian-pizza.space/cal/salary`,
                 data:{
                     childNum :  salary4,
                     dependentNum: salary3,
