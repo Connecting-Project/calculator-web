@@ -63,6 +63,7 @@ function Standard() {
 
     const handlerResult = () => {
             var inputString = inputscrean;
+            console.log(inputString);
             var lastChar = inputString[inputString.length - 1];
             var resultvalue = 0;
             if (
@@ -71,19 +72,50 @@ function Standard() {
                 lastChar === "*" ||
                 lastChar === "/"
             ) {
-                resultvalue = eval(inputString.substring(0, inputString.length - 1));
+                resultvalue = calculate(inputString.substring(0, inputString.length - 1));
                 setInputscrean(resultvalue);
             }else{
-                resultvalue = eval(inputString);
+                resultvalue = calculate(inputString);
                 setInputscrean(resultvalue);
             }
 
             setResultDisplayed(true);
 
-        
     }
 
 
+    const calculate = (input) => {
+        var pos; 
+        console.log(input);
+		pos = input.indexOf('+'); 
+		if (pos !== -1) { 
+			return Number(calculate(input.substring(0, pos))) + Number(calculate(input.substring(pos + 1)));
+		} else {
+			pos = input.indexOf('-');
+			if (pos !== -1) {
+
+				return Number(calculate(input.substring(0, pos))) - Number(calculate(input.substring(pos + 1)));
+			} else {
+				pos = input.indexOf('*');
+				if (pos !== -1) {
+
+					return Number(calculate(input.substring(0, pos))) * Number(calculate(input.substring(pos + 1)));
+				} else {
+					pos = input.indexOf('/');
+					if (pos !== -1) {
+
+						return Number(calculate(input.substring(0, pos))) / Number(calculate(input.substring(pos + 1)));
+					}
+				}
+			}
+		}
+
+		var r = input.trim(); 
+		if (r == null || r === '') 
+			return 0;
+		return r; 
+
+    }
 
     return (
         <div className="standardContainer">

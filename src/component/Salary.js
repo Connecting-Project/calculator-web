@@ -82,6 +82,7 @@ function Salary () {
         if(Number(salary2) > Number(salary5)){
             alert("비과세액이 연봉보다 높습니다.");
         }else{
+
             axios({
                 method:'POST',
                 url: `https://calculator.hawaiian-pizza.pw/cal/salary`,
