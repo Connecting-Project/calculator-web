@@ -90,10 +90,9 @@ function Salary() {
                     dependentNum: salary3,
                     nonTaxableAmount: salary2,
                     year: salary1 === "year" ? true : false,
-                    salary: salary5
+                    grossSalary: salary5
                 }
             }).then((response) => {
-                console.log(response.data);
                 setResult(response.data.salary);
             }).catch((error) => { console.log(error); });
         }
