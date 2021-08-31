@@ -16,8 +16,8 @@ function Standard() {
         } else if (
             (resultDisplayed === true && lastChar === "+") ||
             lastChar === "-" ||
-            lastChar === "*" ||
-            lastChar === "/"
+            lastChar === "×" ||
+            lastChar === "÷"
         ) {
             setResultDisplayed(false);
             setInputscrean(inputscrean+str);
@@ -40,8 +40,8 @@ function Standard() {
         if (
             lastChar === "+" ||
             lastChar === "-" ||
-            lastChar === "*" ||
-            lastChar === "/"
+            lastChar === "×" ||
+            lastChar === "÷"
         ) {
             var newString = currentString.substring(0, currentString.length - 1) + str;
             setInputscrean(newString)
@@ -69,8 +69,8 @@ function Standard() {
             if (
                 lastChar === "+" ||
                 lastChar === "-" ||
-                lastChar === "*" ||
-                lastChar === "/"
+                lastChar === "×" ||
+                lastChar === "÷"
             ) {
                 resultvalue = calculate(inputString.substring(0, inputString.length - 1));
                 setInputscrean(resultvalue);
@@ -96,12 +96,12 @@ function Standard() {
 
 				return Number(calculate(input.substring(0, pos))) - Number(calculate(input.substring(pos + 1)));
 			} else {
-				pos = input.indexOf('*');
+				pos = input.indexOf('×');
 				if (pos !== -1) {
 
 					return Number(calculate(input.substring(0, pos))) * Number(calculate(input.substring(pos + 1)));
 				} else {
-					pos = input.indexOf('/');
+					pos = input.indexOf('÷');
 					if (pos !== -1) {
 
 						return Number(calculate(input.substring(0, pos))) / Number(calculate(input.substring(pos + 1)));
@@ -125,8 +125,8 @@ function Standard() {
                     <div className="operators">
                         <div onClick={()=>{inputSign('+')}}>+</div>
                         <div onClick={()=>{inputSign('-')}}>-</div>
-                        <div onClick={()=>{inputSign('*')}}>&times;</div>
-                        <div onClick={()=>{inputSign('/')}}>&divide;</div>
+                        <div onClick={()=>{inputSign('×')}}>&times;</div>
+                        <div onClick={()=>{inputSign('÷')}}>&divide;</div>
                     </div>
                     <div className="leftPanel">
                         <div className="numbers">
